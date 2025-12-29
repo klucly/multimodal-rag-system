@@ -146,6 +146,7 @@ if search_button and query_text:
         try:
             # Query the system
             parsed_response, (text_results, image_data) = query_gemini(query_text, k=k_results)
+            print(parsed_response)
             
             # Store in history
             st.session_state.history.insert(0, {
