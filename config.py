@@ -16,16 +16,10 @@ CHROMA_COLLECTION_NAME = "the_batch_multimodal"
 CLIP_MODEL_NAME = "ViT-L/14"
 MODEL_NAME = "gemini-2.5-flash"
 
-# Directories
-DATA_DIR = "data"
-IMAGES_DIR = f"{DATA_DIR}/images"
-RAW_HTML_DIR = f"{DATA_DIR}/raw_articles"
-
 # Website
 BASE_URL = "https://www.deeplearning.ai/the-batch/issue-{}/"
 TITLE_URL = "https://www.deeplearning.ai/the-batch/tag/issue-{}/"
-# URL_INDEXES = range(1, 1+1)
-URL_INDEXES = range(123, 331+1)
+URL_INDEXES = range(331+1)
 
 # Scraping & processing
 TITLE_SELECTOR = r"h2.text-xl.lg\:text-2xl.font-semibold.tracking-tight.leading-tight.text-slate-800.font-primary.mb-2"
@@ -40,10 +34,10 @@ DEFAULT_HEADERS = {
 REQUEST_DELAY = 5.0
 
 # Text chunking
-CHUNK_SIZE = 800    # Characters (approximate)
+CHUNK_SIZE = 300    # Characters (approximate)
 
 # Logger setup
-logging_level = logging.DEBUG
+logging_level = logging.WARNING
 logger = logging.getLogger()
 logger.setLevel(logging_level)
 console_handler = logging.StreamHandler(sys.stdout)
