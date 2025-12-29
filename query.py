@@ -18,7 +18,6 @@ import mimetypes
 from config import (
     CHROMA_PERSIST_DIRECTORY,
     CHROMA_COLLECTION_NAME,
-    IMAGES_DIR,
     CLIP_MODEL_NAME,
     GEMINI_API_KEY,
     DB_PATH,
